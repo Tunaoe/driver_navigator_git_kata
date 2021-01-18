@@ -1,8 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 18 17:36:50 2021
+import pandas as pd
 
-@author: tunaoezdemir
-"""
 
+def get_female_passengers():
+    titanic = pd.read_csv('data/titanic_train.csv')
+    titanic_f = titanic[titanic['Sex']=='female']
+    return titanic_f
+
+
+                        
+                    
